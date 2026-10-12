@@ -8,6 +8,12 @@
   overflow: hidden;
 }
 
+.hero.hero--404 {
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: var(--space-6) 0;
+}
+
 .hero__backdrop {
   position: absolute;
   inset: 0;

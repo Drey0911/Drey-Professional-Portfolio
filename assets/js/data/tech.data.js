@@ -1,6 +1,8 @@
 const icon = (path) => `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${path}`;
 
 export const tech = {
+  // Generico de las tec que no tienen icono: rust/rust-plain.svg
+  // Generico para las tec BD que no tienen icono: sqlite/sqlite-original.svg
   html: { name: "HTML", logo: icon("html5/html5-original.svg") },
   css: { name: "CSS", logo: icon("css3/css3-original.svg") },
   js: { name: "JavaScript", logo: icon("javascript/javascript-original.svg") },
@@ -21,13 +23,13 @@ export const tech = {
   blade: { name: "Blade", logo: icon("laravel/laravel-original.svg") },
   python: { name: "Python", logo: icon("python/python-original.svg") },
   flask: { name: "Flask", logo: icon("flask/flask-original.svg") },
-  jinja: { name: "Jinja2", logo: icon("jinja/jinja-original.svg") },
+  jinja: { name: "Jinja2", logo: icon("html5/html5-original.svg") },
   node: { name: "Node.js", logo: icon("nodejs/nodejs-original.svg") },
   express: { name: "Express", logo: icon("express/express-original.svg") },
   mysql: { name: "MySQL", logo: icon("mysql/mysql-original.svg") },
   postgresql: { name: "PostgreSQL", logo: icon("postgresql/postgresql-original.svg") },
   mongodb: { name: "MongoDB", logo: icon("mongodb/mongodb-original.svg") },
-  h2: { name: "H2 Database", logo: icon("datagrip/datagrip-original.svg") },
+  h2: { name: "H2 Database", logo: icon("spring/spring-original.svg") },
   neon: { name: "NeonDB", logo: icon("postgresql/postgresql-original.svg") },
   supabase: { name: "Supabase", logo: icon("supabase/supabase-original.svg") },
   firebase: { name: "Firebase", logo: icon("firebase/firebase-plain.svg") },
@@ -38,7 +40,7 @@ export const tech = {
   figma: { name: "Figma", logo: icon("figma/figma-original.svg") },
   chartjs: { name: "Chart.js", logo: icon("chartjs/chartjs-original.svg") },
   rest: { name: "API REST", logo: icon("swagger/swagger-original.svg") },
-  jwt: { name: "JWT Auth", logo: icon("jsonwebtokens/jsonwebtokens-original.svg") },
+  jwt: { name: "JWT Auth", logo: icon("json/json-original.svg") },
   websockets: { name: "WebSockets", logo: icon("socketio/socketio-original.svg") }
 };
 
