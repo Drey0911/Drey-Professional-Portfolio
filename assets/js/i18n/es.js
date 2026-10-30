@@ -57,11 +57,12 @@ export const es = {
     eyebrow: "Proyectos",
     title: "Trabajos desarrollados",
     subtitle:
-      "Proyectos académicos y personales documentados. Cada uno cuenta con su página de detalle.",
+      "Proyectos académicos, personales, herramientas y utilidades documentados. Cada uno cuenta con su página de detalle.",
     all: "Todos",
     frontend: "Frontend",
     backend: "Backend",
     fullstack: "Fullstack",
+    tools: "Herramientas y utilidades",
     viewMore: "Ver detalles",
     empty: "No hay proyectos en esta categoría por ahora.",
     repo: "Ver repositorio",

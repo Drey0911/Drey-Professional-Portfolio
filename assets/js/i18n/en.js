@@ -56,11 +56,12 @@ export const en = {
     eyebrow: "Projects",
     title: "Selected work",
     subtitle:
-      "Academic and personal projects, fully documented. Each one has its own detail page.",
+      "Academic and personal projects, tools and utilities, fully documented. Each one has its own detail page.",
     all: "All",
     frontend: "Frontend",
     backend: "Backend",
     fullstack: "Fullstack",
+    tools: "Tools & Utilities",
     viewMore: "View details",
     empty: "There are no projects in this category yet.",
     repo: "View repository",

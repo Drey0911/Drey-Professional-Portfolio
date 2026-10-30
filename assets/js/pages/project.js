@@ -129,7 +129,8 @@ const renderDetails = () => {
     { label: t("detail.labelType"), value: t(`projects.${project.type}`) },
     { label: t("detail.labelYear"), value: project.year },
     { label: t("detail.labelRole"), value: tx(project.role) },
-    { label: t("detail.labelStack"), value: String(project.stack.length) }
+    { label: t("detail.labelStack"), value: String(project.stack.length) },
+    ...(project.specs || []).map((spec) => ({ label: tx(spec.label), value: tx(spec.value) }))
   ].forEach((row) => {
     sheet.append(
       el("li", {}, [

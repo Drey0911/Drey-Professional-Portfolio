@@ -41,7 +41,19 @@ export const tech = {
   chartjs: { name: "Chart.js", logo: icon("chartjs/chartjs-original.svg") },
   rest: { name: "API REST", logo: icon("swagger/swagger-original.svg") },
   jwt: { name: "JWT Auth", logo: icon("json/json-original.svg") },
-  websockets: { name: "WebSockets", logo: icon("socketio/socketio-original.svg") }
+  websockets: { name: "WebSockets", logo: icon("socketio/socketio-original.svg") },
+  csharp: { name: "C#", logo: icon("csharp/csharp-original.svg") },
+  dotnet: { name: ".NET 8", logo: icon("dot-net/dot-net-original.svg") },
+  wpf: { name: "WPF", logo: icon("windows11/windows11-original.svg") },
+  winrt: { name: "WinRT / Win32", logo: icon("windows11/windows11-original.svg") },
+  naudio: { name: "NAudio", logo: icon("dot-net/dot-net-original.svg") },
+  lhm: { name: "LibreHardwareMonitor", logo: icon("windows11/windows11-original.svg") },
+  presentmon: { name: "Intel PresentMon", logo: icon("windows11/windows11-original.svg") },
+  traceevent: { name: "TraceEvent (ETW)", logo: icon("dot-net/dot-net-original.svg") },
+  qrcoder: { name: "QRCoder", logo: icon("dot-net/dot-net-original.svg") },
+  openmeteo: { name: "Open-Meteo", logo: icon("json/json-original.svg") },
+  googletranslate: { name: "Google Translate", logo: icon("google/google-original.svg") },
+  deepl: { name: "DeepL", logo: icon("json/json-original.svg") }
 };
 
 export const getTech = (key) => tech[key] || { name: key, logo: "" };

@@ -305,6 +305,65 @@ export const projects = [
       "project6-6.png",
       "project6-7.png"
     ]
+  },
+
+  {
+    id: "dynamic-island",
+    legacyId: 7,
+    folder: "project7",
+    type: "tools",
+    year: "2026",
+    title: {
+      es: "Dynamic Island — Isla dinámica para Windows",
+      en: "Dynamic Island — Dynamic Island for Windows"
+    },
+    summary: {
+      es: "Aplicación de escritorio estilo iPhone para Windows 10 y 11 que muestra música, llamadas, rendimiento, temporizadores y traducciones en el borde superior.",
+      en: "iPhone-style desktop app for Windows 10 and 11 that shows music, calls, performance, timers and translations at the top edge of the screen."
+    },
+    description: {
+      es: "Una Dynamic Island al estilo iPhone construida para PC. Vive en el borde superior de la pantalla, se transforma con animaciones de resorte y muestra lo que pasa en el equipo: música con letras sincronizadas, llamadas, rendimiento y FPS en juegos, temporizadores, traductor en vivo, portapapeles inteligente, batería de dispositivos y APIs personalizadas en tiempo real. Proyecto open source bajo licencia MIT, actualmente en versión 0.7 beta.",
+      en: "An iPhone-style Dynamic Island built for the PC. It lives at the top edge of the screen, morphs with spring animations and shows what is happening on the computer: music with synced lyrics, calls, performance and in-game FPS, timers, a live translator, a smart clipboard, device battery and custom real-time APIs. Open source under the MIT License, currently in version 0.7 beta."
+    },
+    role: { es: "Desarrollo de escritorio con C# y .NET", en: "Desktop development with C# and .NET" },
+    features: [
+      { es: "Música con carátula, efectos reactivos al espectro de audio y letras sincronizadas (LRCLIB)", en: "Music with album art, audio-reactive spectrum effects and synced lyrics (LRCLIB)" },
+      { es: "Modo juego con FPS, 1% low, frametime, temperaturas, uso de CPU/GPU y VRAM", en: "Game mode with FPS, 1% low, frametime, temperatures, CPU/GPU usage and VRAM" },
+      { es: "Detección de llamadas (Discord, Teams, Zoom, WhatsApp, Meet y más) con silenciar micrófono y ensordecer", en: "Call detection (Discord, Teams, Zoom, WhatsApp, Meet and more) with mic mute and deafen" },
+      { es: "Traductor en vivo mientras escribes con texto a voz (Google, MyMemory o DeepL)", en: "Live translator as you type with text-to-speech (Google, MyMemory or DeepL)" },
+      { es: "Batería de audífonos, mouse, teclados y controles por Bluetooth, receptor USB o HID++", en: "Battery for headsets, mice, keyboards and controllers over Bluetooth, USB receiver or HID++" },
+      { es: "Temporizador, cronómetro, alarma y modo enfoque (Pomodoro con No molestar)", en: "Timer, stopwatch, alarm and focus mode (Pomodoro with Do Not Disturb)" },
+      { es: "Portapapeles inteligente, OCR de capturas sin conexión y envío de archivos al celular por QR", en: "Smart clipboard, offline screenshot OCR and sending files to your phone via QR" },
+      { es: "Modo Dev: conecta cualquier API JSON y visualiza sus datos en vivo con gráficas", en: "Dev Mode: plug in any JSON API and watch its data live with charts" },
+      { es: "Atajos globales que funcionan dentro de juegos y modo oculto hasta pasar el cursor", en: "Global shortcuts that work inside games and a hide-until-hover mode" }
+    ],
+    stackNote: {
+      es: "Desarrollado en C# con .NET 8 y WPF para la interfaz, usando APIs de Windows mediante WinRT y Win32. NAudio para audio, volumen por app y espectro; LibreHardwareMonitor para sensores; Intel PresentMon y TraceEvent (ETW) para FPS; QRCoder para compartir archivos; y servicios como Open-Meteo, LRCLIB, Google Translate y DeepL. Se compila como ejecutable autocontenido con un script de build que instala sus dependencias.",
+      en: "Built in C# with .NET 8 and WPF for the UI, using Windows APIs through WinRT and Win32. NAudio for audio, per-app volume and spectrum; LibreHardwareMonitor for sensors; Intel PresentMon and TraceEvent (ETW) for FPS; QRCoder for file sharing; and services such as Open-Meteo, LRCLIB, Google Translate and DeepL. It ships as a self-contained executable with a build script that installs its dependencies."
+    },
+    stack: ["csharp", "dotnet", "wpf", "winrt", "naudio", "lhm", "presentmon", "traceevent", "qrcoder", "openmeteo", "googletranslate", "deepl"],
+    preview: ["csharp", "dotnet", "wpf", "winrt"],
+    specs: [
+      { label: { es: "Plataforma", en: "Platform" }, value: { es: "Windows 10 / 11", en: "Windows 10 / 11" } },
+      { label: { es: "Versión", en: "Version" }, value: { es: "0.7 beta", en: "0.7 beta" } },
+      { label: { es: "Requisitos", en: "Requirements" }, value: { es: ".NET 8 (autocontenido)", en: ".NET 8 (self-contained)" } },
+      { label: { es: "Licencia", en: "License" }, value: { es: "MIT · Open source", en: "MIT · Open source" } }
+    ],
+    links: {
+      repo: "",
+      repoFront: "",
+      mockup: "",
+      deploy: ""
+    },
+    cover: "project7.png",
+    images: [
+      "project7-1.png",
+      "project7-2.png",
+      "project7-3.png",
+      "project7-4.png",
+      "project7-5.png",
+      "project7-6.png"
+    ]
   }
 ];
 
@@ -312,7 +371,8 @@ export const projectTypes = [
   { id: "all", icon: "fas fa-layer-group" },
   { id: "frontend", icon: "fas fa-palette" },
   { id: "backend", icon: "fas fa-server" },
-  { id: "fullstack", icon: "fas fa-cubes" }
+  { id: "fullstack", icon: "fas fa-cubes" },
+  { id: "tools", icon: "fas fa-toolbox" }
 ];
 
 export const findProject = (key) => {
