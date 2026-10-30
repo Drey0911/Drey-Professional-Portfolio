@@ -350,7 +350,7 @@ export const projects = [
       { label: { es: "Licencia", en: "License" }, value: { es: "MIT · Open source", en: "MIT · Open source" } }
     ],
     links: {
-      repo: "",
+      repo: "https://github.com/Drey0911/Dynamic-Island-WIN-10-11",
       repoFront: "",
       mockup: "",
       deploy: ""
